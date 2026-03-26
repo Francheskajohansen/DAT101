@@ -5,9 +5,72 @@
   <title>Submission 2.1</title>
 </head>
 <body>
-<script>
-  /* write your code below this line  🙂 */
+<script><script>
+    "use strict"; // Viktig for å oppdage feil med variabler
 
+    // Variabler med let
+    let age = 20;
+    let name; // variabel uten verdi
+
+    // Konstant med const
+    const pi = 3.14;
+    const birthYear = 2005;
+
+    // Flere variabler på samme linje
+    let firstName = "John", lastName = "Doe";
+    const country = "Norway", language = "Norwegian";
+
+    // Objekter
+    const person = {
+        firstName: "Alice",
+        lastName: "Smith",
+        age: 25
+    };
+
+    console.log("Age:", age);
+    console.log("Name:", name); // undefined
+    console.log("Pi:", pi);
+    console.log("Person:", person);
+    
+    // Prøv å endre variabel og konstant
+    age = 21; // Dette går fint
+    // pi = 3.1415; // Dette vil gi en feil i konsollen
+
+    // Implisitt variabel (vil gi feil med "use strict")
+    // valuePI = 3.14; 
 </script>
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAT101 Assigment 2.1</title>
+</head>
+<body>
+  <h1>DAT101: Mandatory Assigment 2.1</h1>
+
+  <script>
+    "use strict"; // Viktig for å teste forskjellen på implicit og explicit variabler 
+
+    let studentName = "Alex"; 
+    let studentAge = 20; 
+    let gpa = 4.2; 
+    const schoolName = "Arendal VGS";
+
+    const student = {
+      name: "Alex",
+      age: 20,
+      gpa: 4.2,
+    };
+    
+// valuePI = 3.14; // Implisitt - vil gi feil med "use strict mode 
+// schoolName = Kristiansand VGS"; Forsøk på å endre konstant - vil gi feil
+
+console.log ("Student Name:", studentName); 
+console.log ("Student Age:", studentAge); 
+console.log ("Student GPA:", student.gpa); 
+console.log ("School Name:", schoolName); 
+console.log ("Student Object:", student);
+    </script>
 </body>
 </html>

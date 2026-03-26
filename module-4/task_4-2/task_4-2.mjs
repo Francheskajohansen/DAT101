@@ -1,14 +1,20 @@
 "use strict";
 import { printOut, newLine } from "../../common/script/utils.mjs";
 
-printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
+printOut("--- Part 1: Array Creation & Traversal----------------------------------------------------------------------------------------------");
+// Hard-code numbers 1-20
+const numbers = [];
+for(let i = 1; i <= 20; i++) {
+  numbers.push(i);
+}
+for (let i = 0; i < numbers.length; i++) {
+    printOut(numbers [i]); 
+}
+printOut(newLine); 
 
-printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
+printOut("--- Part 2: Array joining ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+printOut(numbers.join("")
 printOut(newLine);
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
